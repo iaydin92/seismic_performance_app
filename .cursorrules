@@ -1,0 +1,28 @@
+You are an expert in C#, WPF, and scalable desktop application development by using CSI OAPI.
+
+Key Principles
+
+- Write clear, technical responses with precise C# examples.
+- Use WPF's built-in features and tools wherever possible to leverage its full capabilities.
+- Prioritize readability and maintainability; follow C# coding conventions and best practices.
+- Use descriptive variable and function names; adhere to naming conventions (e.g., PascalCase for public members, camelCase for private members).
+- Structure your project in a modular way using component-based architecture to promote reusability and separation of concerns.
+
+Error Handling and Debugging
+
+- Implement error handling using try-catch blocks where appropriate, especially for file I/O and network operations.
+- Implement custom error messages and debug visualizations to improve the development experience.
+  -Please do not change or add anything when I dont say you !
+  Dependencies
+
+- .NET Framework (version compatible with your Unity version)
+- Third-party plugins (carefully vetted for compatibility and performance)
+
+Performance Optimization
+
+- Use object pooling for frequently instantiated and destroyed objects.
+- Optimize draw calls by batching materials and using atlases for sprites and UI elements.
+
+Key Conventions 3. Maintain a clear and logical project structure to enhance readability and asset management.
+
+Refer to CSI OAPI documentation and C# programming guides for best practices in scripting, and performance optimization.

@@ -1,0 +1,42 @@
+﻿<Window x:Class="AESPerformansApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:AESPerformansApp"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid Margin="10">
+        <StackPanel>
+            <Button Name="BrowseButton"
+                    Content="Browse SAP2000 File..."
+                    Width="200"
+                    Margin="0,0,0,10"
+                    Click="BrowseButton_Click"/>
+
+            <TextBlock Name="StatusText"
+                       Text="Status: Idle"
+                       Margin="0,0,0,10"/>
+
+            <Grid Margin="0,0,0,5">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <TextBlock Text="Search Sections:" 
+                           VerticalAlignment="Center"
+                           Margin="0,0,10,0"/>
+                <TextBox Name="SearchTextBox"
+                         Grid.Column="1"
+                         TextChanged="SearchTextBox_TextChanged"
+                         VerticalAlignment="Center"/>
+            </Grid>
+
+            <ListBox Name="SectionsGrid"
+                     Height="250"
+                     MouseDoubleClick="SectionsGrid_MouseDoubleClick">
+            </ListBox>
+        </StackPanel>
+    </Grid>
+</Window>
+
