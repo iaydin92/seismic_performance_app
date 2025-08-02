@@ -28,8 +28,8 @@ namespace AESPerformansApp.Calculations
             bool result1 = kl_r >= limit1;  // bf/tf <= 52/sqrt(fy/6.895)
             bool result2 = kl_r <= limit2;   // h/tw <= 418/sqrt(fy/6.895)
 
-            double lc_ix = braceData.r3/braceData.L3;
-            double lc_iy = braceData.r2/braceData.L2;
+            double lc_ix = braceData.L3/braceData.r3;
+            double lc_iy = braceData.L2/braceData.r2;
             double fe = Math.Pow(Math.PI, 2) * 200000 / Math.Pow(Math.Max(lc_ix, lc_iy), 2);
             double fcr;
             if (Math.Max(lc_ix, lc_iy) <= 4.71 * Math.Sqrt(200000 / braceData.Fy))
