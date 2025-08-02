@@ -92,7 +92,7 @@ namespace AESPerformansApp {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/AESPerformansApp;component/sectiondetailswindow.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/AESPerformansApp;V1.0.0.0;component/sectiondetailswindow.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\SectionDetailsWindow.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

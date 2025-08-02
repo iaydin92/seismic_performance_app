@@ -41,9 +41,9 @@ namespace AESPerformansApp.Calculations
                 fcr = 0.877 * fe;
             }
             double p_y = fcr*braceData.Area/1000;
-            double delta_c = p_y*1000*braceData.L/(braceData.I33*200000);
-            double t_y = braceData.Fy / braceData.Area;
-            double delta_t = t_y*1000*braceData.L/(braceData.I33*200000);
+            double delta_c = (p_y*1000*braceData.L)/(braceData.Area*200000);
+            double t_y = braceData.Fy * braceData.Area/1000;
+            double delta_t = t_y*1000*braceData.L/(braceData.Area*200000);
             
             // Calculate profile values and IO, LS, CP values
             double compression_a = CalculateParameter(
