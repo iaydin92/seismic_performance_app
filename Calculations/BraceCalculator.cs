@@ -122,18 +122,6 @@ namespace AESPerformansApp.Calculations
 
             MessageBox.Show(debugMessage, "Brace Hesaplama Debug", MessageBoxButton.OK, MessageBoxImage.Information);
 
-
-
-
-
-
-
-
-
-
-
-
-
             // Store results in BeamCalculationInput for later use
             braceData.compression_a = compression_a;
             braceData.compression_b = compression_b;
@@ -168,7 +156,12 @@ namespace AESPerformansApp.Calculations
                     tension_c = tension_c,
                     tension_IO = tension_IO,
                     tension_LS = tension_LS,
-                    tension_CP = tension_CP
+                    tension_CP = tension_CP,
+
+                    p_y = p_y,
+                    delta_c = delta_c,
+                    t_y = t_y,
+                    delta_t = delta_t
                 };
 
                 string hingeName = braceData.SectionName + "_Axial";
